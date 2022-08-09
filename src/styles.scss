@@ -11,9 +11,9 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$zavrsni-projekt-primary: mat.define-palette(mat.$indigo-palette);
+$zavrsni-projekt-primary: mat.define-palette(mat.$amber-palette);
 $zavrsni-projekt-accent: mat.define-palette(
-  mat.$indigo-palette,
+  mat.$amber-palette,
   A200,
   A100,
   A400
@@ -50,5 +50,9 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.header {
+  width: 100%;
+  text-decoration-color: rgb(238, 7, 7);
+}
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";

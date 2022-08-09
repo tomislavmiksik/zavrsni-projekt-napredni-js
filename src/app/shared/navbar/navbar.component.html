@@ -1,0 +1,29 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidebarmenu.toggle()">menu</mat-icon>
+    </button>
+    <span>El Plan de Journal</span>
+    <span class="spacer"></span>
+    <button mat-icon-button class="mat-account-circle" [routerLink]="'/profile'">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidebarmenu>
+    <mat-nav-list (click)="sidebarmenu.toggle()">
+      <a mat-list-item [routerLink]="''"> Home </a>
+      <a mat-list-item [routerLink]="'/articles'"> Articles </a>
+      <a mat-list-item [routerLink]="'/categories'"> Categories </a>
+      <a mat-list-item [routerLink]="'/login'"> Login </a>
+      <a mat-list-item [routerLink]="'/profile'"> Logout </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 92vh">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
