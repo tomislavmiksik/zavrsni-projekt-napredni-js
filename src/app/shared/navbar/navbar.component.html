@@ -3,15 +3,19 @@
     <button mat-icon-button>
       <mat-icon (click)="sidebarmenu.toggle()">menu</mat-icon>
     </button>
-    <span>El Plan de Journal</span>
+    <button mat-button id="home-button" [routerLink]="'/'">El Webshop</button>
     <span class="spacer"></span>
-    <button mat-icon-button class="mat-account-circle" [routerLink]="'/profile'">
-      <mat-icon>account_circle</mat-icon>
+    <button
+      mat-icon-button
+      class="mat-account-circle"
+      [routerLink]="'/profile'"
+    >
+      <mat-icon>shopping_cart</mat-icon>
     </button>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-sidenav-container>
+<mat-sidenav-container class="sidenav">
   <mat-sidenav #sidebarmenu>
     <mat-nav-list (click)="sidebarmenu.toggle()">
       <a mat-list-item [routerLink]="''"> Home </a>

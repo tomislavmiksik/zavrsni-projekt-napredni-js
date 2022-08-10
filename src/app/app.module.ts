@@ -51,9 +51,17 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { ArticlesPageComponent } from './pages/articles-page/articles-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { CategoriesPageComponent } from './pages/categories-page/categories-page.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, ArticlesPageComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    ArticlesPageComponent,
+    HomePageComponent,
+    CategoriesPageComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

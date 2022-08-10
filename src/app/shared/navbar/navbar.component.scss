@@ -1,7 +1,16 @@
 * {
-  background-color: white;
+  background-color: #ffb300;
+  color: white;
 }
 
 .spacer {
   flex: 1 1 auto;
+}
+
+mat-nav-list > a {
+  color: white;
+}
+
+#home-button {
+  font-size: large;
 }

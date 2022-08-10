@@ -1,4 +1,46 @@
 * {
-  background-color: #F8F9FA;
+  background-color: #f8f9fa;
+}
+
+#wrapper {
   height: 100%;
+  padding: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-card {
+  max-width: 400px;
+  max-height: 300px;
+  margin-bottom: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.spacer {
+  margin: 30px;
+}
+
+.more-button {
+  font-size: large;
+
+  color: #ffb300;
+  margin-bottom: 10px;
+  flex: auto;
+}
+
+#category-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#item-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
