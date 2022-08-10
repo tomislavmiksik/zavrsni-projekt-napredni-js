@@ -53,6 +53,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { ArticlesPageComponent } from './pages/articles-page/articles-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CategoriesPageComponent } from './pages/categories-page/categories-page.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { CategoriesPageComponent } from './pages/categories-page/categories-page
     ArticlesPageComponent,
     HomePageComponent,
     CategoriesPageComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -114,6 +116,7 @@ import { CategoriesPageComponent } from './pages/categories-page/categories-page
     OverlayModule,
     PortalModule,
     ScrollingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
