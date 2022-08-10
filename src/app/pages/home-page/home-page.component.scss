@@ -1,5 +1,10 @@
+$primary-color: #082032;
+$secondary-color: #2c394b;
+$tertiary-color: #334756;
+$accent-color: #ff4c29;
+
 * {
-  background-color: #082032;
+  background-color: $primary-color;
   color: white;
 }
 
@@ -12,54 +17,11 @@
   flex-direction: column;
 }
 
-.example-card {
-  max-width: 400px;
-  max-height: 300px;
-  margin-bottom: 120px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #2c394b;
+
+mat-divider {
+  background-color: #ff4c29;
 }
 
-mat-card-header {
-  background-color: #2c394b;
-}
-
-mat-card-title {
-  color: white;
-  background-color: #2c394b;
-}
-
-mat-card-content {
-  color: white;
-  background-color: #2c394b;
-}
-
-p{
-  background-color: #2c394b;
-}
-
-mat-card-actions {
-  background-color: #2c394b;
-}
-
-mat-card-actions > button {
-  color: white;
-  background-color: #2c394b;
-}
-
-mat-card-actions > button:hover {
-  color: white;
-  background-color: #2c394b;
-}
-
-mat-card-subtitle{
-  background-color: #2c394b;
-}
-
-mat-divider{
-  background-color: #FF4C29;
-}
 
 .spacer {
   margin: 30px;
@@ -67,10 +29,15 @@ mat-divider{
 
 .more-button {
   font-size: large;
-
-  color: #FF4C29;
+  color: white;
   margin-bottom: 10px;
   flex: auto;
+}
+
+button:hover {
+  color: white;
+  background-color: $accent-color;
+  animation-duration: 2ms;
 }
 
 #category-row {

@@ -6,7 +6,7 @@ import { FirebaseUtilService } from '../firebase-util.service';
 @Injectable({
   providedIn: 'root'
 })
-export class ArticleServiceService {
+export class ArticleService {
 
   constructor(private http:HttpClient, private firebaseUtil: FirebaseUtilService) { this.init();}
 

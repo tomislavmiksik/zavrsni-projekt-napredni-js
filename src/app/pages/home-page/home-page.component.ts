@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Article } from 'src/app/models/article';
+import { Category } from 'src/app/models/category';
 import { FirebaseUtilService } from 'src/app/services/firebase-util.service';
 import { UserService } from 'src/app/services/user-services/user.service';
 
@@ -9,6 +11,9 @@ import { UserService } from 'src/app/services/user-services/user.service';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent implements OnInit {
+  articles: Article[] = [];
+  categories: Category[] = [];
+
   constructor(
     private firebaseUtilService: FirebaseUtilService,
     private userService: UserService
@@ -20,7 +25,11 @@ export class HomePageComponent implements OnInit {
     });
 
     this.firebaseUtilService.getArticles().subscribe((articles) => {
-      console.log(articles);
+      this.articles.push(...articles);
+    });
+
+    this.firebaseUtilService.getCategories().subscribe((categories) => {
+      this.categories.push(...categories);
     });
   }
 }

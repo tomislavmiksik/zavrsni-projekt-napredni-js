@@ -1,19 +1,21 @@
 export class Article {
   id: string;
   name: string;
-  price: number;
+  cost: number;
+  imageUrl: string;
   categoryId: string;
 
   constructor(
     id: string,
     name: string,
-    price: number,
-    liked: boolean,
+    cost: number,
+    imageUrl: string,
     categoryId: string
   ) {
     this.id = id;
     this.name = name;
-    this.price = price;
+    this.cost = cost;
     this.categoryId = categoryId;
+    this.imageUrl = imageUrl;
   }
 }

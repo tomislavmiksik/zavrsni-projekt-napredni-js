@@ -1,0 +1,89 @@
+$primary-color: #082032;
+$secondary-color: #2c394b;
+$tertiary-color: #334756;
+$accent-color: #ff4c29;
+
+* {
+  background-color: $primary-color;
+  color: white;
+}
+
+.example-card {
+  max-width: 400px;
+  min-width: 400px;
+  min-height: 300px;
+  max-height: 300px;
+  margin-bottom: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: $secondary-color;
+  box-shadow: none;
+}
+
+
+mat-card-header {
+  background-color: $secondary-color;
+}
+
+mat-card-title {
+  color: white;
+  background-color: $secondary-color;
+}
+
+mat-card-subtitle {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: large;
+  color: $accent-color;
+}
+
+mat-card-content {
+  color: white;
+  background-color: $secondary-color;
+}
+
+p {
+  background-color: $secondary-color;
+  color: white;
+}
+
+mat-card-footer {
+  min-width: 100%;
+  border-radius: 6px;
+  background-color: $secondary-color;
+}
+
+mat-card-footer > button {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: white;
+  background-color: $secondary-color;
+}
+
+mat-card-footer > button:hover {
+  color: white;
+  background-color: $accent-color;
+}
+
+mat-card-subtitle {
+  background-color: $secondary-color;
+}
+mat-card {
+  border-style: 1px solid white;
+  box-shadow: none;
+}
+
+button:hover {
+  color: white;
+  background-color: $accent-color;
+  animation-duration: 2ms;
+}
+
+mat-button {
+  color: white;
+  background-color: $accent-color;
+}
+
+mat-card-content > img{
+  object-fit: cover;
+}

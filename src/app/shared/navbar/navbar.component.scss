@@ -1,5 +1,9 @@
+$primary-color: #082032;
+$secondary-color: #2c394b;
+$tertiary-color: #334756;
+$accent-color: #ff4c29;
 * {
-  // background-color: #ffb300;
+  background-color: $primary-color;
   color: white;
 }
 
@@ -11,10 +15,10 @@ mat-nav-list > a {
   color: white;
 }
 mat-nav-list {
-  background-color: #FF4C29;
+  background-color: $primary-color;
 }
 mat-sidenav {
-  background-color: #FF4C29;
+  background-color: $primary-color;
 }
 
 #home-button {
@@ -22,5 +26,5 @@ mat-sidenav {
 }
 
 mat-toolbar {
-  background-color: #FF4C29;
+  background-color: $primary-color;
 }

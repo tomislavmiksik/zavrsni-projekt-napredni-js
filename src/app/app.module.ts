@@ -54,6 +54,9 @@ import { ArticlesPageComponent } from './pages/articles-page/articles-page.compo
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CategoriesPageComponent } from './pages/categories-page/categories-page.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ArticleCardComponent } from './pages/home-page/components/article-card/article-card.component';
+import { ArticleDetailPageComponent } from './pages/article-detail-page/article-detail-page.component';
+import { CategoryCardComponent } from './pages/home-page/components/category-card/category-card.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +65,9 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ArticlesPageComponent,
     HomePageComponent,
     CategoriesPageComponent,
+    ArticleCardComponent,
+    ArticleDetailPageComponent,
+    CategoryCardComponent,
 
   ],
   imports: [
