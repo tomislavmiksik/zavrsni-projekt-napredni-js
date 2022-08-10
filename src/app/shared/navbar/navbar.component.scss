@@ -1,5 +1,5 @@
 * {
-  background-color: #ffb300;
+  // background-color: #ffb300;
   color: white;
 }
 
@@ -10,7 +10,17 @@
 mat-nav-list > a {
   color: white;
 }
+mat-nav-list {
+  background-color: #ffb300;
+}
+mat-sidenav {
+  background-color: #ffb300;
+}
 
 #home-button {
   font-size: large;
+}
+
+mat-toolbar {
+  background-color: #ffb300;
 }
