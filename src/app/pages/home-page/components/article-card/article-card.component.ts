@@ -16,6 +16,7 @@ export class ArticleCardComponent implements OnInit {
       categoryId: '',
       cost: 0,
       imageUrl: '',
+      description: '',
     };
   }
 

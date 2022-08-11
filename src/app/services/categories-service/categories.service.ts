@@ -26,6 +26,6 @@ export class CategoriesService {
   }
 
   getCategories() {
-    return this.categories;
+    return this.categoriesSubject;
   }
 }
