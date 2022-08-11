@@ -57,6 +57,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ArticleCardComponent } from './pages/home-page/components/article-card/article-card.component';
 import { ArticleDetailPageComponent } from './pages/article-detail-page/article-detail-page.component';
 import { CategoryCardComponent } from './pages/home-page/components/category-card/category-card.component';
+import { ImageSearchPageComponent } from './pages/image-search-page/image-search-page.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { CategoryCardComponent } from './pages/home-page/components/category-car
     ArticleCardComponent,
     ArticleDetailPageComponent,
     CategoryCardComponent,
+    ImageSearchPageComponent,
 
   ],
   imports: [

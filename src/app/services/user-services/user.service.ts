@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { User } from 'src/app/models/user';
-import { FirebaseUtilService } from '../firebase-util.service';
+import { FirebaseUtilService } from '../../shared/firebase-util.service';
 
 @Injectable({
   providedIn: 'root'
@@ -23,5 +23,25 @@ export class UserService {
         this.userSubject.next(this.users);
       }
     );
+  }
+
+  getUsers() {
+    return this.userSubject;
+  }
+
+  getUser(id: string) {
+    return this.firebaseUtil.getUser(id);
+  }
+
+  addUser(user: User) {
+    this.firebaseUtil.addUser(user);
+  }
+
+  updateUser(id: string, user: User) {
+    this.firebaseUtil.updateUser(id, user);
+  }
+
+  deleteUser(id: string) {
+    this.firebaseUtil.deleteUser(id);
   }
 }

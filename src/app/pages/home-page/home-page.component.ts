@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Article } from 'src/app/models/article';
 import { Category } from 'src/app/models/category';
-import { FirebaseUtilService } from 'src/app/services/firebase-util.service';
+import { FirebaseUtilService } from 'src/app/shared/firebase-util.service';
 import { UserService } from 'src/app/services/user-services/user.service';
 
 @Component({
