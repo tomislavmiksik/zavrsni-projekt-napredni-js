@@ -7,8 +7,9 @@
     <span class="spacer"></span>
     <button
       mat-icon-button
-      class="mat-account-circle"
-      [routerLink]="'/profile'"
+      class="mat-cart"
+      matBadge="{{ cart.length }}"
+      [routerLink]="'/cart'"
     >
       <mat-icon>shopping_cart</mat-icon>
     </button>

@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "zavrsni-projekt:build:production",
+            "firebaseProject": "zavrsni-projekt-d8c20",
+            "firebaseHostingSite": "zavrsni-projekt-d8c20"
+          }
         }
       }
     }

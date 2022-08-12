@@ -1,7 +1,44 @@
 $primary-color: #082032;
-$secondary-color: #2C394B;
+$secondary-color: #2c394b;
 $tertiary-color: #334756;
-$accent-color: #FF4C29;
-*{
+$accent-color: #ff4c29;
+* {
   background-color: $primary-color;
+  color: white;
+}
+.card {
+  min-width: 400px;
+  min-height: 200px;
+  max-height: 200px;
+  max-width: 400px;
+  margin-bottom: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: $secondary-color;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.card > img {
+  object-fit: cover;
+}
+
+#category-row {
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: flex-start;
+  justify-self: center;
+  align-self: center;
+}
+
+.card  > p {
+  color: white;
+  background-color: transparent;
+  text-shadow: #082032;
+  font-weight: bold;
+  font-size: x-large;
 }

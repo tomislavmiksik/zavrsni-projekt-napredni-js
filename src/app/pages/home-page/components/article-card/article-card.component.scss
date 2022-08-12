@@ -20,7 +20,6 @@ $accent-color: #ff4c29;
   box-shadow: none;
 }
 
-
 mat-card-header {
   background-color: $secondary-color;
 }
@@ -84,6 +83,10 @@ mat-button {
   background-color: $accent-color;
 }
 
-mat-card-content > img{
+mat-card-content > img {
   object-fit: cover;
+}
+
+img  {
+  cursor: pointer;
 }

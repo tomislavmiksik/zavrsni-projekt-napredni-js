@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs';
+import { Cart } from '../models/cart';
 
 @Injectable({
   providedIn: 'root',
@@ -56,8 +57,7 @@ export class FirebaseUtilService {
     );
   }
 
-
-  getArticle(id :string) {
+  getArticle(id: string) {
     return this.http.get(this.baseUrl + 'items/' + id + '.json');
   }
   getUser(id: string) {
@@ -67,21 +67,41 @@ export class FirebaseUtilService {
     return this.http.get(this.baseUrl + 'categories/' + id + '.json');
   }
   getOrder(id: string) {
-    return this.http.get(this.baseUrl + 'orders/' + id + '.json');
+    return this.http.get(this.baseUrl + 'order/' + id + '.json');
+  }
+
+  addOrder(order: Cart) {
+    return this.http
+      .post(this.baseUrl + 'order.json', order)
+      .subscribe((res) => {
+        console.log(res);
+      });
   }
 
   addArticle(article: any) {
-    return this.http.post(this.baseUrl + 'items.json', article);
+    return this.http
+      .post(this.baseUrl + 'items.json', article)
+      .subscribe((res) => {
+        console.log(res);
+      });
   }
+
   addUser(user: any) {
-    return this.http.post(this.baseUrl + 'users.json', user);
+    return this.http
+      .post(this.baseUrl + 'users.json', user)
+      .subscribe((res) => {
+        console.log(res);
+      });
   }
   addCategory(category: any) {
-    return this.http.post(this.baseUrl + 'categories.json', category);
+    return this.http
+      .post(this.baseUrl + 'categories.json', category)
+      .subscribe((res) => {
+        console.log(res);
+      });
   }
-  addOrder(order: any) {
-    return this.http.post(this.baseUrl + 'orders.json', order);
-  }
+
+
 
   updateArticle(id: string, article: any) {
     return this.http.put(this.baseUrl + 'items/' + id + '.json', article);
@@ -93,7 +113,7 @@ export class FirebaseUtilService {
     return this.http.put(this.baseUrl + 'categories/' + id + '.json', category);
   }
   updateOrder(id: string, order: any) {
-    return this.http.put(this.baseUrl + 'orders/' + id + '.json', order);
+    return this.http.put(this.baseUrl + 'order/' + id + '.json', order);
   }
 
   deleteArticle(id: string) {
@@ -106,7 +126,6 @@ export class FirebaseUtilService {
     return this.http.delete(this.baseUrl + 'categories/' + id + '.json');
   }
   deleteOrder(id: string) {
-    return this.http.delete(this.baseUrl + 'orders/' + id + '.json');
+    return this.http.delete(this.baseUrl + 'order/' + id + '.json');
   }
-
 }

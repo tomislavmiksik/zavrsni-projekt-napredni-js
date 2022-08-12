@@ -1,0 +1,30 @@
+$primary-color: #082032;
+$secondary-color: #2c394b;
+$tertiary-color: #334756;
+$accent-color: #ff4c29;
+
+.card {
+  height: 200px;
+  margin: 50px;
+}
+
+.wrapper {
+  padding: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-button > button {
+  color: #ff4c29;
+  background-color: #ff4c29;
+}
+
+.mat-flat-button {
+  color: white;
+  background-color: #ff4c29;
+  position: fixed;
+  right: 5em;
+  bottom: 5em;
+}

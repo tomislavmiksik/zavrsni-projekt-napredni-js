@@ -1,1 +1,10 @@
-<p>categories-page works!</p>
+<section id="category-row">
+  <span *ngFor="let category of categories">
+    <div
+      class="card"
+      [style.background-image]="'url(' + category.imageUrl + ')'"
+    >
+      <p>{{ category.name }}</p>
+    </div>
+  </span>
+</section>

@@ -1,12 +1,12 @@
 <mat-card class="example-card">
-  <mat-card-header >
+  <mat-card-header>
     <mat-card-title>{{ article.name }}</mat-card-title>
     <mat-card-subtitle>${{ article.cost }}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <img mat-card-image src="{{ article.imageUrl }}" height="190" width="300" />
+    <img mat-card-image src="{{ article.imageUrl }}" height="190" width="300"  [routerLink]="['articles-page', article.id]" />
   </mat-card-content>
   <mat-card-footer>
-    <button mat-button>ADD TO CART</button>
+    <button mat-button (click)="addToCart()">ADD TO CART</button>
   </mat-card-footer>
 </mat-card>

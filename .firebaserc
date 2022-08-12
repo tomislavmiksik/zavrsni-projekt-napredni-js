@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "zavrsni-projekt-d8c20": {
+      "hosting": {
+        "zavrsni-projekt": [
+          "zavrsni-projekt-d8c20"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "zavrsni-projekt-d8c20"
+  }
+}

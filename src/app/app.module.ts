@@ -58,6 +58,7 @@ import { ArticleCardComponent } from './pages/home-page/components/article-card/
 import { ArticleDetailPageComponent } from './pages/article-detail-page/article-detail-page.component';
 import { CategoryCardComponent } from './pages/home-page/components/category-card/category-card.component';
 import { ImageSearchPageComponent } from './pages/image-search-page/image-search-page.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { ImageSearchPageComponent } from './pages/image-search-page/image-search
     ArticleDetailPageComponent,
     CategoryCardComponent,
     ImageSearchPageComponent,
+    CartPageComponent,
 
   ],
   imports: [
