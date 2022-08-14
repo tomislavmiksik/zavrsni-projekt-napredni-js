@@ -59,6 +59,7 @@ import { ArticleDetailPageComponent } from './pages/article-detail-page/article-
 import { CategoryCardComponent } from './pages/home-page/components/category-card/category-card.component';
 import { ImageSearchPageComponent } from './pages/image-search-page/image-search-page.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -127,6 +128,7 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
     PortalModule,
     ScrollingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

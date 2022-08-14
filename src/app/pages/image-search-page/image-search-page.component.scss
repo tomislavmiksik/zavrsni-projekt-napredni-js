@@ -1,0 +1,82 @@
+$primary-color: #082032;
+$secondary-color: #2c394b;
+$tertiary-color: #334756;
+$accent-color: #ff4c29;
+
+* {
+  background-color: $primary-color;
+  color: white;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.img-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#input-search {
+  width: 100%;
+}
+mat-form-field {
+  width: 100%;
+}
+
+mat-divider {
+  background-color: #ff4c29;
+}
+
+.spacer {
+  margin: 10px;
+}
+
+.order-button > button {
+  color: #ff4c29;
+  background-color: #ff4c29;
+}
+
+.mat-flat-button {
+  color: white;
+  background-color: #ff4c29;
+  position: fixed;
+  right: 5em;
+  bottom: 5em;
+}
+
+mat-icon {
+  color: white;
+  background-color: $accent-color;
+}
+
+span {
+  color: white;
+  background-color: $accent-color;
+}
+
+.search-result {
+  min-width: 400px;
+  min-height: 200px;
+  max-height: 200px;
+  max-width: 400px;
+  padding: 10px;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.search-result > img {
+  object-fit: cover;
+}

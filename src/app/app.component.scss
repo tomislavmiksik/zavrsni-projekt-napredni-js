@@ -1,7 +1,22 @@
+$primary-color: #082032;
+$secondary-color: #2c394b;
+$tertiary-color: #334756;
+$accent-color: #ff4c29;
+
 .main {
   flex-direction: row;
+  background-color: $primary-color;
+}
+
+body{
+  background-color: $primary-color;
+  color: white;
 }
 
 * {
-  background-color: #f8f9fa;
+  background-color: $primary-color;
 }
+
+
+
+

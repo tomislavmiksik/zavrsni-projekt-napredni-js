@@ -1,1 +1,30 @@
-<p>image-search-page works!</p>
+<div class="wrapper">
+  <div class="disclaimer">Powered by Pixabay API</div>
+  <mat-form-field appearance="fill">
+    <mat-label>Input</mat-label>
+    <input matInput [(ngModel)]="query" />
+  </mat-form-field>
+  <span class="spacer"></span>
+  <mat-divider></mat-divider>
+  <span class="spacer"></span>
+  <div class="img-row">
+    <div *ngFor="let result of searchResults">
+      <img
+        class="search-result"
+        src="{{ result.largeImageURL }}"
+        height="190"
+        width="300"
+      />
+    </div>
+  </div>
+</div>
+
+<button
+  mat-flat-button
+  class="orderButton"
+  aria-label="Example icon button with a delete icon"
+  (click)="search()"
+>
+  <mat-icon>search</mat-icon>
+  Complete Order
+</button>
