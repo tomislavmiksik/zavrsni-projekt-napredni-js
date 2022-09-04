@@ -9,7 +9,6 @@ import { CategoriesService } from 'src/app/services/categories-service/categorie
   styleUrls: ['./categories-page.component.scss'],
 })
 export class CategoriesPageComponent implements OnInit {
-
   categories: Category[] = [];
 
   constructor(
@@ -20,7 +19,6 @@ export class CategoriesPageComponent implements OnInit {
   ngOnInit(): void {
     this.categoryService.getCategories().subscribe((categories) => {
       this.categories = categories;
-    }
-    );
+    });
   }
 }

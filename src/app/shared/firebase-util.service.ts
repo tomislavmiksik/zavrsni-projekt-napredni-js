@@ -46,7 +46,7 @@ export class FirebaseUtilService {
     );
   }
   getOrders() {
-    return this.http.get(this.baseUrl + 'orders.json').pipe(
+    return this.http.get(this.baseUrl + 'order.json').pipe(
       map((res: any) => {
         const orders = [];
         for (const key in res) {
@@ -100,8 +100,6 @@ export class FirebaseUtilService {
         console.log(res);
       });
   }
-
-
 
   updateArticle(id: string, article: any) {
     return this.http.put(this.baseUrl + 'items/' + id + '.json', article);

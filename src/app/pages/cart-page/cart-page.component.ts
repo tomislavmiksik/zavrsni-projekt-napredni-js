@@ -19,5 +19,6 @@ export class CartPageComponent implements OnInit {
 
   order() {
     this.cartService.order();
+    this.cart = [];
   }
 }

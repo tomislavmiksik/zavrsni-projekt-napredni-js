@@ -6,6 +6,7 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { CategoriesPageComponent } from './pages/categories-page/categories-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ImageSearchPageComponent } from './pages/image-search-page/image-search-page.component';
+import { OrderPageComponent } from './pages/order-page/order-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'categories-page/:categoryId', component: ArticlesPageComponent },
   { path: 'cart', component: CartPageComponent },
   { path: 'image-search', component: ImageSearchPageComponent},
+  { path: 'orders', component: OrderPageComponent},
 ];
 
 @NgModule({

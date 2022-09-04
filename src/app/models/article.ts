@@ -1,5 +1,5 @@
 export class Article {
-  id: number;
+  id?: string;
   name: string;
   cost: number;
   imageUrl: string;
@@ -7,7 +7,7 @@ export class Article {
   description: string;
 
   constructor(
-    id: number,
+    id: string,
     name: string,
     cost: number,
     imageUrl: string,

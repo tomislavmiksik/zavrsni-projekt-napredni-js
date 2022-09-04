@@ -60,6 +60,8 @@ import { CategoryCardComponent } from './pages/home-page/components/category-car
 import { ImageSearchPageComponent } from './pages/image-search-page/image-search-page.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { FormsModule } from '@angular/forms';
+import { OrderPageComponent } from './pages/order-page/order-page.component';
+import { CategoryPipe } from './pipes/category.pipe';
 
 @NgModule({
   declarations: [
@@ -73,7 +75,8 @@ import { FormsModule } from '@angular/forms';
     CategoryCardComponent,
     ImageSearchPageComponent,
     CartPageComponent,
-
+    OrderPageComponent,
+    CategoryPipe,
   ],
   imports: [
     BrowserModule,
