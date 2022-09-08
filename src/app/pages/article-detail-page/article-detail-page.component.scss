@@ -1,0 +1,20 @@
+$primary-color: #082032;
+$secondary-color: #2c394b;
+$tertiary-color: #334756;
+$accent-color: #ff4c29;
+
+* {
+  background-color: $primary-color;
+  color: white;
+}
+.wrapper {
+  height: 100%;
+  padding: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.details {
+  padding-top: 50px;
+}

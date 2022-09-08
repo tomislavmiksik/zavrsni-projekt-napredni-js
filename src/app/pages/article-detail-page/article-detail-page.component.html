@@ -1,1 +1,13 @@
-  
+<div class="wrapper">
+  <!-- create an article detail page -->
+  <div class="col-md-6">
+    <img src="{{ article.imageUrl }}" height="190" width="300" />
+  </div>
+  <div class="details">
+    <h1>{{ article.name }}</h1>
+    <h3>Description: {{ article.description }}</h3>
+    <h3>Price: ${{ article.cost }}</h3>
+    <h3>Category: {{ article | category: categories }}</h3>
+    <button mat-button (click)="addToCart()">ADD TO CART</button>
+  </div>
+</div>
