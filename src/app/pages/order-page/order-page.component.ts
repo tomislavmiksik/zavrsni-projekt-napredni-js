@@ -20,8 +20,7 @@ export class OrderPageComponent implements OnInit {
   }
 
   deleteOrder(id: string) {
-    console.log(id);
-
     this.orderService.deleteOrder(id);
+    this.orders = this.orders.filter((order) => order.id !== id);
   }
 }

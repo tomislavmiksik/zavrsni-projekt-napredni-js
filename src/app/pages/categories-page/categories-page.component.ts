@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import { Category } from 'src/app/models/category';
 import { ArticleService } from 'src/app/services/article-services/article.service';
 import { CategoriesService } from 'src/app/services/categories-service/categories.service';
@@ -11,6 +12,9 @@ import { CategoriesService } from 'src/app/services/categories-service/categorie
 export class CategoriesPageComponent implements OnInit {
   categories: Category[] = [];
 
+  // @ts-ignore
+  categoriesSubject : BehaviorSubject<Category[]> = new BehaviorSubject(null);
+
   constructor(
     private articleService: ArticleService,
     private categoryService: CategoriesService
@@ -19,6 +23,7 @@ export class CategoriesPageComponent implements OnInit {
   ngOnInit(): void {
     this.categoryService.getCategories().subscribe((categories) => {
       this.categories = categories;
+      this.categoriesSubject.next(this.categories);
     });
   }
 }
