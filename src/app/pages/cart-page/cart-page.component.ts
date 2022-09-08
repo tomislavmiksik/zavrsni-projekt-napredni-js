@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Article } from 'src/app/models/article';
 import { Cart } from 'src/app/models/cart';
 import { CartService } from 'src/app/services/cart-services/cart.service';
@@ -9,6 +9,7 @@ import { CartService } from 'src/app/services/cart-services/cart.service';
   styleUrls: ['./cart-page.component.scss'],
 })
 export class CartPageComponent implements OnInit {
+  @Output() clear: EventEmitter<Cart> = new EventEmitter<Cart>();
   cart: Article[] = [];
 
   constructor(private cartService: CartService) {}

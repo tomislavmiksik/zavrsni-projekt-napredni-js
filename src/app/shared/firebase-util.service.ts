@@ -124,6 +124,10 @@ export class FirebaseUtilService {
     return this.http.delete(this.baseUrl + 'categories/' + id + '.json');
   }
   deleteOrder(id: string) {
-    return this.http.delete(this.baseUrl + 'order/' + id + '.json');
+    return this.http
+      .delete(this.baseUrl + 'order/' + id + '.json')
+      .subscribe((res) => {
+        console.log(res);
+      });
   }
 }

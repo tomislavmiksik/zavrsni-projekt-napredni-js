@@ -62,6 +62,7 @@ import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { FormsModule } from '@angular/forms';
 import { OrderPageComponent } from './pages/order-page/order-page.component';
 import { CategoryPipe } from './pipes/category.pipe';
+import { ArticlePipe } from './pipes/article.pipe';
 
 @NgModule({
   declarations: [
@@ -77,6 +78,7 @@ import { CategoryPipe } from './pipes/category.pipe';
     CartPageComponent,
     OrderPageComponent,
     CategoryPipe,
+    ArticlePipe,
   ],
   imports: [
     BrowserModule,

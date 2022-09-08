@@ -16,11 +16,12 @@ export class OrderPageComponent implements OnInit {
     this.orderService.getOrders().subscribe((orders) => {
       this.orders = orders;
       console.log(this.orders[0].id);
-
     });
   }
 
   deleteOrder(id: string) {
+    console.log(id);
+
     this.orderService.deleteOrder(id);
   }
 }
